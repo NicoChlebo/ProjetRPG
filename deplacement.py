@@ -9,7 +9,6 @@ class Deplacement:
         self.orientation = 0
 
     def deplacer(self, direction):
-        """Déplace le personnage dans la direction indiquée."""
         if direction == "N" and self.y > 0:
             self.y -= 1
         elif direction == "S" and self.y < self.hauteur - 1:
@@ -22,13 +21,10 @@ class Deplacement:
             print("⚠️ Déplacement impossible !")
 
     def avancer(self):
-        """Avance d'une case dans la direction actuelle."""
         self.deplacer(self.DIRECTIONS[self.orientation][0])
 
     def tourner_gauche(self):
-        """Tourne à gauche (changement d'orientation)."""
         self.orientation = (self.orientation - 1) % 4
 
     def tourner_droite(self):
-        """Tourne à droite (changement d'orientation)."""
         self.orientation = (self.orientation + 1) % 4

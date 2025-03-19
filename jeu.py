@@ -9,7 +9,6 @@ class Jeu:
         self.deplacement = Deplacement(self.personnage, self.donjon.TAILLE, self.donjon.TAILLE)
 
     def jouer(self):
-        """Boucle principale du jeu"""
         while True:
             print(f"\n📍 Position : ({self.deplacement.x}, {self.deplacement.y}) - Orientation : {Deplacement.DIRECTIONS[self.deplacement.orientation]} - ❤️ {self.personnage.pv} PV")
             print(f"📦 Contenu de la salle : {self.donjon.afficher_salle(self.deplacement.x, self.deplacement.y)}")
