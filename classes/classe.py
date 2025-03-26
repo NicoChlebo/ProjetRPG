@@ -1,4 +1,6 @@
-class Classe:
+from abc import ABC, abstractmethod
+
+class Classe(ABC):
     def __init__(self, nom, pv, pm, force, intelligence, défense, résistance_magique, agilité, chance, endurance, esprit):
         self.nom = nom
         self.pv = pv
@@ -11,3 +13,7 @@ class Classe:
         self.chance = chance
         self.endurance = endurance
         self.esprit = esprit
+
+    @abstractmethod
+    def description(self):
+        pass
