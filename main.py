@@ -1,4 +1,4 @@
-from deplacement.deplacement import Deplacement
+from deplacement.gestion_deplacement import GestionCommandes
 from personnage.creer_perso import CreerPersonnage
 from personnage.personnages import Personnage
 from personnage.recap_perso import RecapPerso
@@ -8,4 +8,4 @@ from donjon.donjon import Donjon
 # Programme principal 
 creer_personnage = CreerPersonnage.creer_personnage()
 RecapPerso.recap_perso(creer_personnage)
-Jeu.jouer(Personnage, Deplacement, Donjon)
+Jeu.jouer(Personnage, GestionCommandes, Donjon)
