@@ -1,13 +1,13 @@
-from deplacement.deplacement import Deplacement
 from deplacement.deplacement_nord import DeplacementNord
 from deplacement.deplacement_sud import DeplacementSud
 from deplacement.deplacement_est import DeplacementEst
 from deplacement.deplacement_ouest import DeplacementOuest
+from deplacement.gestion_deplacement import GestionCommandes
 from .deplacement_enum import Direction
 from typing import Dict
 
 class GestionCommandes:
-    def __init__(self, deplacement: Deplacement):
+    def __init__(self, deplacement: GestionCommandes):
         self.deplacement = deplacement
 
         self.strategies = {
