@@ -1,7 +1,7 @@
 import unittest
 from unittest import mock
 from classes.guerrier import Guerrier
-from personnages import Personnage
+from personnage.personnages import Personnage
 
 class TestPersonnage(unittest.TestCase):
     

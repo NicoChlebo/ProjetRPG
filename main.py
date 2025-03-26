@@ -1,6 +1,6 @@
-from jeu import Jeu
+from personnage.creer_perso import CreerPersonnage
+from personnage.recap_perso import RecapPerso
 
-def main():
-    jeu = Jeu()
-    jeu.jouer()
-main()
+# Programme principale 
+creer_personnage = CreerPersonnage.creer_personnage()
+RecapPerso.recap_perso(creer_personnage)
