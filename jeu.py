@@ -2,7 +2,7 @@ from deplacement.deplacement_interface import DeplacementInterface
 from affichage_jeu import AffichageJeu
 from donjon.donjon_interface import DonjonInterface
 from personnage.personnage_interface import PersonnageInterface
-from deplacement.gestion_commande import GestionCommandes
+from deplacement.gestion_deplacement import GestionCommandes
 
 class Jeu:
     @staticmethod
