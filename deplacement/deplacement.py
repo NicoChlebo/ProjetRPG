@@ -1,5 +1,6 @@
 class Deplacement:
     DIRECTIONS = ["Nord", "Est", "Sud", "Ouest"]
+
     def __init__(self, personnage, largeur, hauteur):
         self.personnage = personnage
         self.largeur = largeur  
